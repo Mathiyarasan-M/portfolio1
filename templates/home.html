@@ -1,0 +1,442 @@
+<!--{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <h1>hi there</h1>
+    <img src="{% static 'images/my.png' %}" alt="">
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <li><a href="#home" class="t-white roboto ">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#About" class="t-white roboto ">About me <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#Skills" class="t-white roboto ">Skills <i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#Projects" class="t-white roboto ">Projects <i class="fa-solid fa-project-diagaram"></i></a>
+            </li>
+            <li><a href="#Contact Us" class="t-white roboto ">Contact Us <i class="fa-solid fa-rocket"></i></a></li>
+        </div>
+    </nav>
+
+    <!-home->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flext items-center">
+            <div class="home-content">
+                <h6 class="popinss">Hi ,i'm</h6>
+                <h1 class="t-white">Mathiyarasan</h1>
+                <h4 class="popinss">Software Engineer</h4>
+                <a href="#" target="_blank">
+                    <button class="btn popinss">Resume</button>
+                </a>
+                <a class="btn live popinss" id="hireme" target="_blank" href="#">lets talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImages">
+                <img src="{% static 'images/my.png' %}" alt="picture">
+            </div>
+        </div>
+    </section>
+    <!-about->
+    <section id="about">
+        <h1 class="t center my-2 t-white f-2">About<menu></menu>
+        </h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/about.png' %}" alt="images">
+            </div>
+        </div>
+
+        <div class="about-right flex">
+            <div class="about-container">
+                <h1 class="t-white m-b-1 popinss">Mathiyarasan</h1>
+                <p class="t-white popinss">Name: Mathiyarasan,<br>
+                    Occupation: Software Engineer <br>
+                    Location: Arasanoor,sivagangai <br>
+                    Introduction:
+                    -----
+                    Hello, I'm Mathiyarasan, a Junior Python Developer eager to make my mark in the world of software
+                    development. I bring a passion for coding and a hunger for learning to every
+                    project.
+
+                    As a Junior Python Developer, I'm actively seeking opportunities to contribute to meaningful
+                    projects, collaborate with like-minded professionals, and continuously grow in the field. If you
+                    have exciting projects or opportunities, feel free to reach out to me via
+                    --mathiyarasanmurugan@gamil.com
+                    .
+
+                    Looking forward to connecting and bringing my passion for Python development to your team!
+                </p>
+                <a class="btn" id="hireme" href="">Here me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-skill section->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/skills.png' %}" alt="">
+            </div>
+            <div class="skills-right flex items-center">
+                <div class="skills-container">
+                    <div class="python bar p-relative"><span class="bar-content left t-white">Python</span></div>
+                    <div class="python_django bar p-relative"><span class="bar-content left t-white">Python
+                            Django</span></div>
+                    <div class="html_css bar p-relative"><span class="bar-content left t-white">Html&Css</span></div>
+                    <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span>
+                    </div>
+                    <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Bootsrap</span></div>
+                    <div class="sql bar p-relative"><span class="bar-content left t-white">Mysql</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <--project->
+    <section id="Project">
+        <h1 class="t-center my-2 t-white f-2">Project</h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-col s-center">
+                <h1 class="t-white popinss">Ecomerce website</h1>
+                <p class="t-white popinss">🌐Responsive Design: Our website is crafted with a responsive design to
+                    ensure a consistent and enjoyable shopping experience across various devices, including desktops,
+                    tablets, and smartphones.<br>
+
+                    🛒Product Catalog:Explore a diverse range of products across different categories. Our extensive
+                    product catalog showcases high-quality items, and you can easily browse and filter products to find
+                    exactly what you're looking for. <br>
+
+                    🛍️ User-friendly Shopping Cart: Seamlessly add products to your shopping cart and proceed to
+                    checkout with just a few clicks. Our intuitive and user-friendly interface makes the shopping
+                    process hassle-free. <br>
+                    👨‍💻User Accounts: Create a personalized user account to track your orders, save favorite
+                    items, and enjoy a customized shopping experience tailored to your preferences.
+
+                </p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Githup</a>
+                </div>
+            </div>
+
+            <div class="project-item flex f-col s-center">
+                <h1 class="t-white popinss">Portfolio</h1>
+                <p class="t-white popinss">🚀Django-Powered: This portfolio is built with Django, a high-level web
+                    framework that allows for rapid development and clean, pragmatic design. Django's versatility has
+                    empowered me to create a dynamic and interactive website.
+                    <br>
+                    💻Projects Showcase:Explore a collection of my projects, ranging from web applications to
+                    personal projects. Each project highlights my skills in Django, Python, front-end technologies, and
+                    more.
+                    <br>
+                    🌐Responsive Design:The portfolio is designed to be responsive, ensuring a seamless experience
+                    across various devices. Whether you're on a desktop or a mobile device, you'll have easy access to
+                    my work.
+
+                    <br>
+                    📧 **Contact Me:** Have a project in mind or want to get in touch? Use the contact form on the
+                    website to reach out to me. I'm always open to new opportunities, collaborations, and discussions.
+
+
+                </p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Githup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-contact->
+    <section id="contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Us</h1>
+        <div class="contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popinss" placeholder="Enter Your Name">
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="popinss" placeholder="Enter Your Email">
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="popinss" placeholder="Enter Your PhoneNumber">
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="popinss"
+                            placeholder="Enter Your Content"></textarea>
+                    </div>
+                    <button type="submit" class="btn popinss" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-footer->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="popinss">Home</a></li>
+            <li><a href="#about" class="popinss">About</a></li>
+            <li><a href="#skills" class="popinss">Skills</a></li>
+            <li><a href="#project" class="popinss">Project</a></li>
+            <li><a href="#portfolio" class="popinss">portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-gmail"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+    </footer>
+</body>
+
+</html>
+-->
+
+
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>`
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Mathiyarasan</h1>
+                <h4 class="poppinss">Software Engineer</h4>
+                <a href="{% static 'pdf/django.pdf' %}" target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+
+                <a class="btn live poppins" id="hireme" href="" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/my.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/about.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Mathiyarasan</h1>
+                    <p class="t-white poppins">My name is Mathiyarasan.I’m a BE student vickram College in Computer
+                        Science & Engineering.
+                        -----
+                        Hello, I'm Mathiyarasan, a Junior Python Developer eager to make my mark in the world of
+                        software
+                        development. I bring a passion for coding and a hunger for learning to every
+                        project.
+
+                        As a Junior Python Developer, I'm actively seeking opportunities to contribute to meaningful
+                        projects, collaborate with like-minded professionals, and continuously grow in the field. If you
+                        have exciting projects or opportunities, feel free to reach out to me via
+                        --mathiyarasanmurugan@gamil.com
+                        .
+
+                        Looking forward to connecting and bringing my passion for Python development to your team!
+                    </p>
+                    <a class="btn " id="hireme" href="">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class=" skills-left flex s-center items-center">
+                <img src="{%static 'images/py.png'%}" alt="">
+            </div>
+
+            <div class="skills-right flex items-center">
+
+                <div class="skills-container">
+                    <div class="python bar p-relative"><span class="bar-content left t-white">Python</span></div>
+                    <div class="python_django bar p-relative"><span class="bar-content left t-white">Python
+                            Django</span></div>
+                    <div class="html_css bar p-relative"><span class="bar-content left t-white">Html&Css</span></div>
+                    <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span>
+                    </div>
+                    <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Bootsrap</span></div>
+                    <div class="sql bar p-relative"><span class="bar-content left t-white">Mysql</span></div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-col s-center">
+                <h1 class="t-white popinss">Ecomerce website</h1>
+                <p class="t-white popinss">🌐Responsive Design: Our website is crafted with a responsive design to
+                    ensure a consistent and enjoyable shopping experience across various devices, including desktops,
+                    tablets, and smartphones.<br>
+
+                    🛒Product Catalog:Explore a diverse range of products across different categories. Our extensive
+                    product catalog showcases high-quality items, and you can easily browse and filter products to find
+                    exactly what you're looking for. <br>
+
+                    🛍️ User-friendly Shopping Cart: Seamlessly add products to your shopping cart and proceed to
+                    checkout with just a few clicks. Our intuitive and user-friendly interface makes the shopping
+                    process hassle-free. <br>
+                    👨‍💻User Accounts: Create a personalized user account to track your orders, save favorite
+                    items, and enjoy a customized shopping experience tailored to your preferences.
+
+                </p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Mathiyarasan-M/Ecommerce-website.git" target="_blank"
+                        class="btn mx-1 m-top">Githup</a>
+                </div>
+            </div>
+
+            <div class="project-item flex f-col s-center">
+                <h1 class="t-white popinss">Portfolio</h1>
+                <p class="t-white popinss">🚀Django-Powered: This portfolio is built with Django, a high-level web
+                    framework that allows for rapid development and clean, pragmatic design. Django's versatility has
+                    empowered me to create a dynamic and interactive website.
+                    <br>
+                    💻Projects Showcase:Explore a collection of my projects, ranging from web applications to
+                    personal projects. Each project highlights my skills in Django, Python, front-end technologies, and
+                    more.
+                    <br>
+                    🌐Responsive Design:The portfolio is designed to be responsive, ensuring a seamless experience
+                    across various devices. Whether you're on a desktop or a mobile device, you'll have easy access to
+                    my work.
+
+                    <br>
+                    📧 **Contact Me:** Have a project in mind or want to get in touch? Use the contact form on the
+                    website to reach out to me. I'm always open to new opportunities, collaborations, and discussions.
+
+
+                </p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Githup</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone" required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+
+        </ul>
+
+
+    </footer>
+
+</body> 
+
+</html>
